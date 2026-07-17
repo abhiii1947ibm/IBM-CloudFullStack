@@ -15,8 +15,110 @@ public class java02 {
         return isPrime;
         
     }
+
+    public static boolean Anagram(String str1, String str2){
+
+        if(str1.length() != str2.length()){
+            return false;
+        }
+
+        char[] arr = new char[26];
+
+        for(int i=0;i<str1.length();i++){
+            arr[str1.charAt(i)-'a']++;
+            arr[str2.charAt(i)-'a']--;
+        }       
+        
+
+
+        for(int i=0;i<26;i++){
+            if(arr[i] > 0){
+                return false;
+            }
+        }
+
+
+        return true;
+    }
+
+
+    // public static int[] fun(int[] arr, int k){
+
+    //     int[] res = new int[arr.length];
+    //     k = k%arr.length;
+    //     for(int i=0;i<k;i++){
+    //         int temp = arr[i];
+    //         arr[i] = arr[k];
+    //         arr[k] = temp;
+    //         k++;
+    //     }
+
+    //     return res;
+    // }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in); // Step 2: Create Scanner
+
+
+        // -------------- reverse an array -----------------
+        // int n = sc.nextInt();
+        // int[] arr = new int[n];
+
+        // for(int i=0;i<n;i++){
+        //     arr[i] = sc.nextInt();
+        // }
+
+        // int k = sc.nextInt();
+
+        // for(int i=0;i<n;i++){
+        //     System.out.print(arr[i]+" ");
+        // }
+
+        // int[] ans = fun(arr, k);
+
+        int[] arr = {0,1,3,7,5};
+        int k = 2;
+
+        int[] ans = new int[arr.length];
+        int j = 0;
+
+        for(int i=k;i<arr.length;i++){
+            ans[j++] = arr[i];
+        }
+
+        for(int i=0;i<k;i++){
+            ans[j++] = arr[i];
+        }
+
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr[i]+" ");
+        }        
+
+        System.out.println();
+
+        for(int i=0;i<arr.length;i++){
+            System.out.print(ans[i]+" ");
+        }       
+
+        // int[] ans = fun(arr, 2);
+
+        // for(int i=0;i<ans.length;i++){
+        //     System.out.print(ans[i]+" ");
+        // }
+
+        // --------------- Anagram Program ------------------
+
+        // String str1 = sc.nextLine();
+        // String str2 = sc.nextLine();
+
+        // if(Anagram(str1, str2)){
+        //     System.out.print("These are anagram.");
+        // }
+        // else{
+        //     System.out.print("These are not anagram");
+        // }
+
+        // -----------------------------------------------------------------------
 
         // System.out.print("Enter your name: ");
         // String name = sc.nextLine(); // Read String
@@ -105,13 +207,13 @@ public class java02 {
         // ------------------- Program 3 --------------------
 
 
-        int n = sc.nextInt();
+        // int n = sc.nextInt();
 
-        for(int i=2;i<=n;i++){
-            if(prime(i)){
-                System.out.println(i);
-            }
-        }
+        // for(int i=2;i<=n;i++){
+        //     if(prime(i)){
+        //         System.out.println(i);
+        //     }
+        // }
 
         // for(int i=2;i<=n;i++){
         //     boolean prime = true;
@@ -124,6 +226,9 @@ public class java02 {
         //         System.out.println(i);
         //     }
         // }
+
+
+        
 
     }
 }
