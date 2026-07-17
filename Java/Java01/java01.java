@@ -1,3 +1,4 @@
+package Java01;
 public class java01 {
     public static void main(String[] args) {
         int a = 10;

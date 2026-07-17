@@ -1,3 +1,4 @@
+package Java02;
 import java.util.Scanner;
 
 public class java02 {
@@ -76,7 +77,7 @@ public class java02 {
 
         // int[] ans = fun(arr, k);
 
-        int[] arr = {0,1,3,7,5};
+        int[] arr = {0,1,3,7,5,8};
         int k = 2;
 
         int[] ans = new int[arr.length];
