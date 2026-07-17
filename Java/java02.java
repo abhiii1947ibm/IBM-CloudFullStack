@@ -1,6 +1,20 @@
 import java.util.Scanner;
 
 public class java02 {
+
+    public static boolean prime(int n){
+
+        boolean isPrime = true;
+
+        for(int i=2;i*i<=n;i++){
+            if( n % i == 0){
+                isPrime = false;
+            }
+        }
+
+        return isPrime;
+        
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in); // Step 2: Create Scanner
 
@@ -90,19 +104,26 @@ public class java02 {
 
         // ------------------- Program 3 --------------------
 
+
         int n = sc.nextInt();
 
         for(int i=2;i<=n;i++){
-            boolean prime = true;
-            for(int j=2;j<=Math.sqrt(i);j++){
-                if(i % j == 0){
-                    prime = false;
-                }
-            }
-            if(prime == true){
+            if(prime(i)){
                 System.out.println(i);
             }
         }
+
+        // for(int i=2;i<=n;i++){
+        //     boolean prime = true;
+        //     for(int j=2;j<=Math.sqrt(i);j++){
+        //         if(i % j == 0){
+        //             prime = false;
+        //         }
+        //     }
+        //     if(prime == true){
+        //         System.out.println(i);
+        //     }
+        // }
 
     }
 }
