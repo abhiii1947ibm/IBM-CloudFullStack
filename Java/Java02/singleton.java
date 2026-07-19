@@ -1,24 +1,28 @@
 package Java02;
 
-class Singleton {
-// public:
-//     static Singleton* instance;
+public class Singleton {
 
-    Singleton() {
-        System.out.println("Singleton Constructor is called. New Object is created");
+
+    public static void main(String[] args){
+
+        // Calculator c1 = new Calculator();
+        // Calculator c2 = new Calculator();
+
+        Calculator c1 = Calculator.getInstance();
+        Calculator c2 = Calculator.getInstance();
+
+        c1.a = 10;
+        c1.b = 7;
+
+        c2.a = 6;
+        c2.b = 9;
+
+
+        System.out.println(c1.sum());
+        System.out.println(c2.sum());
+
+        System.out.print(c1 == c2);
+
     }
     
 }
-
-public class singleton {
-    public static void main(String[] args){
-
-        Singleton s1 = new Singleton();
-        Singleton s2 = new Singleton();
-
-        System.out.println(s1 == s2);
-
-    }
-}
-
-
