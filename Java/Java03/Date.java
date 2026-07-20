@@ -6,6 +6,9 @@ import java.util.Scanner;
 
 public class Date {
 
+//     git config --global user.name "Abhishek Nigam"
+// git config --global user.email "your-email@example.com"
+
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
