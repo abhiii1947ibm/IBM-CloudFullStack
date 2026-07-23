@@ -1,5 +1,4 @@
 package Java02;
-import java.util.Scanner;
 
 public class java02 {
 
@@ -58,7 +57,7 @@ public class java02 {
     // }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in); // Step 2: Create Scanner
+        // Scanner sc = new Scanner(System.in); // Step 2: Create Scanner
 
 
         // -------------- reverse an array -----------------

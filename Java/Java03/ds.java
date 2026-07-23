@@ -1,4 +1,4 @@
-package java03;
+package Java03;
 
 import java.util.ArrayDeque;
 import java.util.HashMap;

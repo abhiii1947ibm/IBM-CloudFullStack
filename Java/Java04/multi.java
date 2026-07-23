@@ -1,6 +1,5 @@
 package Java04;
 
-import java.time.Duration;
 import java.util.concurrent.atomic.AtomicInteger;
 
 class Task extends Thread {
@@ -41,20 +40,20 @@ class Counter {
 
 public class multi {
     public static void main(String[] args) throws InterruptedException {
-        Counter c = new Counter();
+        // Counter c = new Counter();
 
-        Thread th1 = new Task("Learn Java");
-        Thread th2 = new Thread(new RTask("Learn Python"));
-        Thread th3 = new Thread(() -> {
-            for (int i = 0; i < 1000; i++) {
-                c.inc();
-            }
-        });
-        Thread th4 = new Thread(() -> {
-            for (int i = 0; i < 1000; i++) {
-                c.inc();
-            }
-        });
+        // Thread th1 = new Task("Learn Java");
+        // Thread th2 = new Thread(new RTask("Learn Python"));
+        // Thread th3 = new Thread(() -> {
+        //     for (int i = 0; i < 1000; i++) {
+        //         c.inc();
+        //     }
+        // });
+        // Thread th4 = new Thread(() -> {
+        //     for (int i = 0; i < 1000; i++) {
+        //         c.inc();
+        //     }
+        // });
         // th1.start();
         // th2.start();
         // th3.start();

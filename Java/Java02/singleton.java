@@ -1,6 +1,6 @@
 package Java02;
 
-public class Singleton {
+public class singleton {
 
 
     public static void main(String[] args){
