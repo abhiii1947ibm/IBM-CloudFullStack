@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 //   timeLimitSeconds: { type: Number, default: 30 }
 // });
 
+
 const quizSchema = new mongoose.Schema({
   title: { type: String, required: true },
   description: { type: String },
