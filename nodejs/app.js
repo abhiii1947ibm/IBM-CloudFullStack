@@ -36,6 +36,7 @@ async function getHTMLFileSync(filename) {
     return await fs.readFile(path.join(__dirname, '..', filename), 'utf8');
 }
 
+
 const myServer = http.createServer(async (req, res) => {
     // res.end("Hello World");
     if(req.url === '/start'){
